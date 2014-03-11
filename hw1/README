@@ -1,1 +1,21 @@
-XXX: fill in
+Name   : Prasidh Srikanth
+SBU ID : 109294122
+Subject: Opertaing Systems ( CSE 506 )  Assignment 1
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+User Program and Normal Mode:
+
+Validation done for verifying validity of arguments passed by the user program to kernel program, validaition at the user program, check for bogus buffer, failures during read/write, permissions of the input and output files, limit the number of input files to 10.
+
+I have made use of vfs_read, vfs_write,getname, getopt,strtol, copy_from_user in this mode.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Atomic Mode [Extra Credit]:
+
+My approach in performing atomic concatenation is : Validate the input and output file, Copy the contents of the input file to the temp file. If the number of bytes read is equal to the number of bytes written, I copy the contents of temp file to the outfile and unlink the temp file. If the read to the temp file fails, I unlink the temp file from the file system.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Reference:
+
+1. Linux code browsing: http://lxr.free-electrons.com/source/fs/read_write.c?v=3.2#L364
+2. How to implement getopt: http://www.gnu.org/software/libc/manual/html_node/Example-of-Getopt.html
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
