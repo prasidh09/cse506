@@ -1,5 +1,18 @@
 cse506
 ======
+
+Project 2: (To be uploaded soon)
+
+Unification File System.
+
+Project 3: (To be uploaded soon)
+
+Asynchronous and concurrent processing in linux kernel.
+
+=======
+
+HW1:
+
 Concatenating or merging several files into one is a common task that many users perform in the user level.  Alas, it takes a lot of I/O and data copies between the user /bin/cat process and the kernel. My task was to create a new system call that can concatenate one or more files into a destination target file.
 
 STEPS:
