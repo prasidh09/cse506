@@ -1,4 +1,4 @@
-cse506
+Operating Systems
 ======
 
 Project 2: 
