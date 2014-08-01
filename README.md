@@ -1,11 +1,11 @@
 cse506
 ======
 
-Project 2: (To be uploaded soon)
+Project 2: 
 
 Unification File System.
 
-Project 3: (To be uploaded soon)
+Project 3:
 
 Asynchronous and concurrent processing in linux kernel.
 
