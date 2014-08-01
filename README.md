@@ -1,4 +1,4 @@
-Operating Systems
+Operating Systems [Course taken under Prof. Erez Zadok]
 ======
 
 Project 2: 
