@@ -1,4 +1,4 @@
-Operating Systems [Prof. Erez Zadok]
+Operating Systems
 ======
 
 Project 2: 
