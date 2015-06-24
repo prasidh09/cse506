@@ -36,7 +36,6 @@ set nowrap
 set hidden
 
 
-set term=ansi
 " Attempt to determine the type of a file based on its name and possibly its
 " contents. Use this to allow intelligent auto-indenting for each filetype,
 " and for plugins that are filetype specific.
@@ -178,18 +177,18 @@ set pastetoggle=<F11>
 " Indentation settings according to personal preference.
 
 
-" Indentation settings for using 2 spaces instead of tabs.
+" Indentation settings for using 8 spaces instead of tabs.
 " Do not change 'tabstop' from its default value of 8 with this setup.
-set shiftwidth=2
-set softtabstop=2
+set shiftwidth=8
+set softtabstop=8
 
 set expandtab
 
 
 " Indentation settings for using hard tabs for indent. Display tabs as
 " two characters wide.
-"set shiftwidth=2
-"set tabstop=2
+"set shiftwidth=8
+"set tabstop=8
 
 
 
