@@ -1,0 +1,58 @@
+"To ask ctags look recursively up till it finds a CTAG
+set tags=./tags,tags;
+syntax on
+filetype plugin indent on
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+let b:match_words = 'begin:end'
+set nocompatible
+set number
+set autoindent
+set smartindent
+set shiftwidth=8
+set incsearch ignorecase hlsearch
+set showmatch
+filetype plugin on
+set smartcase
+set noexpandtab
+set cul
+set noswapfile
+set nobackup
+set background=dark
+colorscheme desert
+set backspace+=indent,eol,start
+set whichwrap+=l,h
+set nowrap
+set hidden
+set incsearch
+map <F12> :!find . -iname '*.c' -o -iname '*.cpp' -o -iname '*.h' -o -iname '*.hpp' > cscope.files ;
+  \:!cscope -b -i cscope.files -f cscope.out<CR>
+  \:cs kill -1<CR>:cs add cscope.out<CR>
+set showcmd
+set hlsearch
+set ignorecase
+set backspace=indent,eol,start
+set nostartofline
+set ruler
+set laststatus=2
+set confirm
+set visualbell
+set t_vb=
+set mouse=a
+set cmdheight=2
+set number
+set notimeout ttimeout ttimeoutlen=200
+set pastetoggle=<F11>
+set shiftwidth=8
+set softtabstop=8
+map Y y$
+map <C-c> "+y<CR>
+
+
+" Map <C-L> (redraw screen) to also turn off search highlighting until the
+" next search
+nnoremap <C-L> :nohl<CR><C-L>
